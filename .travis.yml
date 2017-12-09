@@ -1,0 +1,14 @@
+language: python
+python:
+  - "3.6"
+# command to run tests
+install:
+    - pip install requests
+    #- pip install selenium
+    #- pip install behave
+script:
+  - python3 test_calc.py
+ # - python3 test_duckduckgo.py
+  #- behave
+
+# - pytest 
