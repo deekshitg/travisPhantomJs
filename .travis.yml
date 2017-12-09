@@ -4,11 +4,10 @@ python:
 # command to run tests
 install:
     - pip install requests
-    #- pip install selenium
+    - pip install selenium
     #- pip install behave
 script:
-  - python3 test_calc.py
- # - python3 test_duckduckgo.py
+    - python3 test_kentjobs.py
   #- behave
 
 # - pytest 
