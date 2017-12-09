@@ -18,15 +18,7 @@ class TestOne(unittest.TestCase):
 		self.assertIn(
 			"http://jobs.kent.edu/cw/en-us/search/?search-keyword=Chemistry", self.driver.current_url
 		)
-		title = self.driver.find_element_by_id('search-results-content').find_elements_by_tag_name('tr')
-		for content in title[0::2]:
-			row1 = content.find_elements_by_tag_name('td')
-			for data in row1[0:5]:
-				if(count == 0):
-					print('--------------------------------------------')
-				print(data.text)
-				count = count+1
-			count = 0
+		
 			
 
 
